@@ -1,0 +1,68 @@
+a {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+h1, h2, h3, h4, h5, p, td, th {
+    font-family: "Montserrat", sans-serif;
+}
+td, th{
+    font-size: larger;
+}
+nav{
+    background-color: rgba(36, 36, 36, 0.583);
+}
+#UNI{
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background-color: rgba(0, 200, 255, 0.48);
+}
+#cuerpo{
+    background-color:rgba(255, 228, 196, 0.882);
+    box-shadow: 7px 4px 8px rgba(0, 0, 0, 0.1)
+}
+#nosotros{
+    margin-top: 140px;
+}
+P{
+    padding-top: 0.7rem;
+}
+h5{
+    padding-top: 1.5rem;
+    letter-spacing:1.5px;
+}
+#oficial{
+    padding-top: 0rem;
+}
+#tabla{
+    margin-top: 150px;
+    margin-left: 9.8rem;
+}
+#novedad{
+    margin-bottom: 2rem;
+}
+table {
+    width:100%;
+    border-collapse:separate;
+    border-radius: 5px;
+    background-color: rgba(255, 25, 0, 0.155);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    white-space: wrap; 
+    text-overflow:clip;
+    word-wrap: break-word;
+    max-width: 350%; 
+}
+#inscripciones{
+    margin-top: 150px;
+}
+#quiero{
+    margin-top: 10px;
+}
+#donde{
+    margin-top: 110px;
+}
+#reseñas{
+    margin-left: 12rem;
+}

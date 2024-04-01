@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/" onclick="window.location.reload();">UNI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#UNI">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#1">Novedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#inscripciones">Inscripciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#donde">Donde encontrarnos</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+       <a href="/login"><button class="btn btn-outline-success" type="button">¿Sos moderador?</button></a>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="row my-3">
+    <div id="UNI" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-1">
+            <h1>Bienvenidos</h1>
+            <p id="oficial">Universidad Nacional de Ingenieria</p>
+        </div>
+    </div>
+</div>
+<div id="cuerpo">
+<div class="row my-3">
+    <div id="nosotros" class="row align-items-center">
+        <div class="col-lg-5 offset-lg-1">
+            <h1>Nosotros</h1>
+            <h5>Somos la Universidad Nacional de Ingenieria, contamos con las mejores instalaciones y profesores para que te prepares para los desafios
+                que vendrán luego de finalizar tus estudios. Contamos con contactos con universidades del exterior tanto para realizar intercambios y recomendar a nuestros 
+                egresados para que le sean otorgadas becas y oportunidades de trabajo en empresas reconocidas mundialmente.
+                Contamos con multiples tutorias y clases de apoyo para que nunca te atrases con los contenidos.
+            </h5>
+        </div>
+    </div>
+</div>
+<div class="row my-3" id="1">
+    <div id="tabla" class="col-md-5 offset-md-2">
+        <div>
+            <h1 id="novedad">Novedades</h1>
+            <table>
+              <tbody>
+                {{#each novedades}}
+                <tr>
+                  <td>{{titulo}}</td>
+                  <td>{{desarrollo}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>
+<div id="inscripciones" class="row py-1">
+    <div class="row align-items-center">
+        <div class="col-lg-5 offset-lg-1">
+            <h1>Inscripciones</h1>
+            <h5>Las inscripciones se encuentran abiertas para todas las carreras de nuestra Universidad, para ingresar a la plataforma de inscripcion haga click en el boton de debajo. Una vez realizada la inscripcion, nos contactaremos con usted a traves de la cuenta de Email ingresada.
+            </h5>
+           <a href="/inscripcion"><button type="button" class="btn btn-outline-primary" id="quiero">Quiero inscribirme</button></a>
+        </div>
+        
+    </div>
+</div>
+<div id="donde" class="row py-4">
+    <div class="col-md-4 offset-md-1">
+        <h1>Donde encontrarnos</h1>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d345.18989757329336!2d-58.38163704317409!3d-34.60369982464273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1711663334600!5m2!1ses-419!2sar" width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+    </div>
+    </div>
+    <form action="/" method="post" class="col-md-4">
+    <div id="reseñas">
+      <h1>Contactanos</h1>
+  <div>
+    <label for="inputEmail3" class="form-label" require>Email</label>
+    <div class="col-sm-10">
+      <input name="email" type="email" class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div>
+  <div>
+  <label for="exampleFormControlTextarea1" class="form-label" require>Motivo del contacto</label>
+  <textarea name="motivo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div style="margin-top: 15px">
+  <button type="submit" value="Enviar" class="btn btn-outline-primary" id="Contacto">Enviar</button>
+  </div>
+  <p>{{message}}</p>
+</form>
+</div>
+</div>
+  </body>
+</html>

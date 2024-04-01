@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aliceblue">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/" onclick="window.location.reload();">UNI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    </nav>
+    <h1 style="margin-top: 100px; text-align: center">Eliminar una novedad</h1>
+    <form action="/admin/novedades/eliminar" method="post" style="margin-left: 815px; margin-top: 50px; margin-right: 100px;">
+  <div class="col-md-3">
+    <label for="inputEmail4" class="form-label">Id</label>
+    <input name="id" type="number" class="form-control" id="inputEmail4">
+  </div>
+    <div class="col-12">
+        <button type="submit" class="btn " style="background-color:red; margin-top: 10px; margin-left: 80px;">Eliminar</button>
+  </div>
+  </form>
+
+</body>
+</html>
